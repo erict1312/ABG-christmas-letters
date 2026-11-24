@@ -231,3 +231,6 @@ body.letter-page {
     width: clamp(145px, 52%, 180px);
   }
 }
+#letter-paragraphs p:last-child {
+  margin-top: .75rem;
+}
