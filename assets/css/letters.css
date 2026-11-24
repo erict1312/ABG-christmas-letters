@@ -192,3 +192,17 @@ body.letter-page {
   padding: 1.05rem 1.25rem .75rem;
   margin: 0;
 }
+
+/* Envelope illustration refinement */
+.letter-envelope {
+  width: 140px;
+  max-width: 45%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.25rem;
+}
+
+#letter-paragraphs p {
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
