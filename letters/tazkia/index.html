@@ -13,8 +13,16 @@
     <section class="letter-card">
       <div id="password-gate">
         <p class="letter-kicker">A Christmas surprise</p>
-        <h1 class="letter-title">A Little Something for <span id="recipient-name">You</span></h1>
-        <p class="letter-intro">Someone has prepared a little Christmas surprise just for you. Enter your secret password to open it.</p>
+        <img
+          class="gate-illustration"
+          src="../../images/shared/christmas-envelope-personalized.png"
+          alt="A Christmas envelope with a red wax seal, evergreen branches, berries, and a pinecone"
+          width="445"
+          height="185"
+        />
+        <h1 class="letter-title gate-title">A Special Christmas Note,<br />Just for You — <strong id="recipient-name">You</strong></h1>
+        <p class="letter-intro gate-intro">A small Christmas gift, wrapped in words of appreciation. I hope this little letter brings a smile to your day.</p>
+        <div class="gate-divider" aria-hidden="true"><span>🎀</span></div>
         <form id="password-form" class="letter-form">
           <label for="letter-password">Your password</label>
           <input id="letter-password" type="password" autocomplete="off" placeholder="Enter your password" required />
