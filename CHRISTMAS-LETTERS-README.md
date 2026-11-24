@@ -27,4 +27,5 @@ The password gate is a simple client-side gate, not secure authentication.
 ## Personalized folders
 - `letters/tazkia/` — Person 01, Ce Tazkia
 - `letters/megy/` — Person 02, Kak Megy
-- Remaining recipients stay in `letters/person-03/` through `letters/person-10/` until named.
+- - `letters/jennifer/` — Person 03, Ci Jennifer
+- Remaining recipients stay in `letters/person-04/` through `letters/person-10/` until named.
