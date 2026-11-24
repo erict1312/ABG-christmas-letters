@@ -27,11 +27,13 @@
     });
     if (config.closing) {
       const closing = document.createElement('p');
+      closing.className = 'letter-closing';
       closing.textContent = config.closing;
       paragraphs.appendChild(closing);
     }
     if (config.signature) {
       const signature = document.createElement('p');
+      signature.className = 'letter-signature';
       signature.innerHTML = '<strong></strong>';
       signature.querySelector('strong').textContent = config.signature;
       paragraphs.appendChild(signature);

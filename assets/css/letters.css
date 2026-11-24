@@ -192,3 +192,20 @@ body.letter-page {
   padding: 1.05rem 1.25rem .75rem;
   margin: 0;
 }
+
+
+/* Letter closing, signature, and footer spacing */
+#letter-paragraphs .letter-closing {
+  margin-top: 1.25rem;
+  margin-bottom: .35rem;
+}
+
+#letter-paragraphs .letter-signature {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#letter-content .letter-footer {
+  margin-top: 2.5rem;
+  padding-bottom: .5rem;
+}

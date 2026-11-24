@@ -14,5 +14,5 @@ window.LETTER_CONFIG = {
     'Sekali lagi, selamat Natal ce! Tetap semangat dalam pelayanannya & terus menjadi berkat bagi orang" di sekitar cc.'
   ],
   closing: 'Warm regards,',
-  signature: 'Eric'
+  signature: 'Eric Tirtana'
 };
