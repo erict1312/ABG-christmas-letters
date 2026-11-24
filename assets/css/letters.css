@@ -281,10 +281,15 @@ body.letter-page {
   background: #ead8c7;
 }
 
-.gate-divider span {
-  font-size: 1.25rem;
-  line-height: 1;
+.gate-divider img {
+  display: block;
+  width: clamp(140px, 42%, 220px);
+  max-height: 58px;
+  height: auto;
+  object-fit: contain;
+  flex: 0 1 auto;
 }
+
 
 #password-gate .letter-form {
   margin-top: 0;
@@ -313,5 +318,11 @@ body.letter-page {
 
   .gate-divider {
     margin: 1.25rem 0 1.5rem;
+    gap: .6rem;
+  }
+
+  .gate-divider img {
+    width: clamp(125px, 44%, 175px);
+    max-height: 48px;
   }
 }
