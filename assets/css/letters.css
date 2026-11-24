@@ -46,10 +46,12 @@ body.letter-page {
   font-size: 16px; /* Prevents automatic zoom on focus in iOS Safari */
 }
 .letter-form button {
-  width: 100%;
-  min-height: 3.25rem;
-  padding: .85rem 1.25rem;
-  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  padding: 1.05rem 1.25rem .75rem;
 }
 .letter-form button:focus-visible,
 .letter-form input:focus-visible {
