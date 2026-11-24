@@ -269,7 +269,7 @@ body.letter-page {
   display: flex;
   align-items: center;
   gap: .75rem;
-  margin: 1.5rem 0 1.75rem;
+  margin: 1.35rem 0 1.5rem;
   color: var(--christmas-red);
 }
 
@@ -283,11 +283,12 @@ body.letter-page {
 
 .gate-divider img {
   display: block;
-  width: clamp(140px, 42%, 220px);
-  max-height: 58px;
+  width: 64px;
+  max-width: 20%;
+  max-height: 52px;
   height: auto;
   object-fit: contain;
-  flex: 0 1 auto;
+  flex: 0 0 auto;
 }
 
 
@@ -317,12 +318,13 @@ body.letter-page {
   }
 
   .gate-divider {
-    margin: 1.25rem 0 1.5rem;
-    gap: .6rem;
+    margin: 1.1rem 0 1.3rem;
+    gap: .55rem;
   }
 
   .gate-divider img {
-    width: clamp(125px, 44%, 175px);
-    max-height: 48px;
+    width: 54px;
+    max-width: 18%;
+    max-height: 42px;
   }
 }
