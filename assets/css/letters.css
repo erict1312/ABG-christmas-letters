@@ -193,13 +193,14 @@ body.letter-page {
   margin: 0;
 }
 
-/* Envelope illustration refinement */
-.letter-envelope {
+/* Christmas envelope illustration - final sizing */
+.letter-illustration {
+  display: block;
   width: 140px;
   max-width: 45%;
   height: auto;
-  display: block;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 1.5rem;
+  object-fit: contain;
 }
 
 #letter-paragraphs p {
