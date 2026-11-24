@@ -149,3 +149,29 @@ body.letter-page {
     margin-bottom: 1.25rem;
   }
 }
+
+.letter-form {
+  display: block;
+  width: 100%;
+}
+
+.letter-form input,
+.letter-form button {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+}
+
+.letter-form input {
+  display: block;
+}
+
+.letter-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  padding: 1.05rem 1.25rem .75rem;
+  margin: 0;
+}
