@@ -7,7 +7,7 @@ body.letter-page { background:var(--paper); color:var(--ink); }
 .letter-kicker { color:var(--christmas-red); text-transform:uppercase; letter-spacing:.18em; font-size:.75rem; font-weight:700; }
 .letter-title { color:var(--christmas-green); margin:.5rem 0 1rem; }
 .letter-intro { color:#71665e; }
-.letter-form { margin-top:2rem; }
+.letter-form { width: 100%; }
 .letter-form input { width:100%; margin-bottom:1rem; }
 .letter-error { color:var(--christmas-red); min-height:1.5rem; margin:.5rem 0 0; }
 #letter-content { margin-top:2rem; padding-top:2rem; border-top:1px solid #eee4d8; }
@@ -48,11 +48,14 @@ body.letter-page {
 .letter-form button {
   display: flex;
   width: 100%;
+  max-width: none;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   text-align: center;
   line-height: 1;
   padding: 1.05rem 1.25rem .75rem;
+  margin: 0;
 }
 .letter-form button:focus-visible,
 .letter-form input:focus-visible {
