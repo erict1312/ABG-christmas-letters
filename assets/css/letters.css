@@ -283,14 +283,14 @@ body.letter-page {
 
 .gate-divider img {
   display: block;
-  width: 72px;
+  width: 88px;
   max-width: none;
-  max-height: 52px;
+  max-height: 58px;
   height: auto;
   object-fit: contain;
   object-position: center;
   overflow: visible;
-  flex: 0 0 72px;
+  flex: 0 0 88px;
 }
 
 
@@ -325,9 +325,9 @@ body.letter-page {
   }
 
   .gate-divider img {
-    width: 68px;
+    width: 84px;
     max-width: none;
-    max-height: 46px;
+    max-height: 54px;
     object-position: center;
   }
 }
