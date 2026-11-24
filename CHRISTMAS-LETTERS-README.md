@@ -16,3 +16,9 @@ This package builds on the previous mobile-ready starter and adds the Modern & E
 Replace the repository files with this package (or, for a minimal update, copy only the added CSS block at the bottom of `assets/css/letters.css`). Then commit and push.
 
 The password gate is a simple client-side gate, not secure authentication.
+
+
+### Christmas letter illustration
+- Added a small local envelope illustration above the heading on each unlocked letter page.
+- Asset: `images/shared/christmas-envelope.png`.
+- Shared by all 10 recipients; no external image hosting is required.

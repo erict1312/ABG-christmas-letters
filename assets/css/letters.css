@@ -150,6 +150,23 @@ body.letter-page {
   }
 }
 
+/* Small festive illustration above each unlocked letter */
+.letter-illustration {
+  display: block;
+  width: clamp(125px, 30%, 165px);
+  height: auto;
+  margin: 0 auto 1.25rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 736px) {
+  .letter-illustration {
+    width: clamp(120px, 38%, 150px);
+    margin-bottom: 1rem;
+  }
+}
+
+/* Keep password input and unlock button aligned at the same width */
 .letter-form {
   display: block;
   width: 100%;
