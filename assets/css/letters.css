@@ -1,0 +1,74 @@
+
+/* Christmas Letters shared styles */
+:root { --christmas-red:#9d2f36; --christmas-green:#315b49; --paper:#fffaf1; --ink:#342e2a; }
+body.letter-page { background:var(--paper); color:var(--ink); }
+.letter-shell { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:3rem 1.25rem; }
+.letter-card { width:min(100%, 760px); background:#fff; padding:clamp(1.5rem,5vw,3.5rem); border-radius:1rem; box-shadow:0 18px 60px rgba(45,35,25,.10); }
+.letter-kicker { color:var(--christmas-red); text-transform:uppercase; letter-spacing:.18em; font-size:.75rem; font-weight:700; }
+.letter-title { color:var(--christmas-green); margin:.5rem 0 1rem; }
+.letter-intro { color:#71665e; }
+.letter-form { margin-top:2rem; }
+.letter-form input { width:100%; margin-bottom:1rem; }
+.letter-error { color:var(--christmas-red); min-height:1.5rem; margin:.5rem 0 0; }
+#letter-content { margin-top:2rem; padding-top:2rem; border-top:1px solid #eee4d8; }
+#letter-content p { line-height:1.9; margin-bottom:1.25rem; }
+[hidden] { display:none !important; }
+.letter-footer { margin-top:2rem; color:#8b8178; font-size:.85rem; text-align:center; }
+
+/* Mobile-first refinements for phones and QR-code visitors */
+html { -webkit-text-size-adjust: 100%; }
+body.letter-page {
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow-x: hidden;
+}
+.letter-shell {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: max(1.25rem, env(safe-area-inset-top))
+           max(1rem, env(safe-area-inset-right))
+           max(1.25rem, env(safe-area-inset-bottom))
+           max(1rem, env(safe-area-inset-left));
+}
+.letter-card {
+  box-sizing: border-box;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.letter-title { line-height: 1.2; overflow-wrap: break-word; }
+.letter-intro, #letter-content { overflow-wrap: anywhere; }
+.letter-form input {
+  box-sizing: border-box;
+  min-height: 3.25rem;
+  font-size: 16px; /* Prevents automatic zoom on focus in iOS Safari */
+}
+.letter-form button {
+  width: 100%;
+  min-height: 3.25rem;
+  padding: .85rem 1.25rem;
+  touch-action: manipulation;
+}
+.letter-form button:focus-visible,
+.letter-form input:focus-visible {
+  outline: 3px solid var(--christmas-green);
+  outline-offset: 3px;
+}
+#letter-content p { overflow-wrap: anywhere; }
+
+@media screen and (max-width: 736px) {
+  .letter-shell { align-items: flex-start; padding-top: 1rem; padding-bottom: 1rem; }
+  .letter-card { width: 100%; padding: 1.5rem 1.25rem; border-radius: .85rem; }
+  .letter-title { font-size: 1.75rem; }
+  .letter-kicker { font-size: .7rem; letter-spacing: .14em; }
+  .letter-intro { line-height: 1.7; }
+  #letter-content { margin-top: 1.5rem; padding-top: 1.5rem; }
+  #letter-content p { line-height: 1.8; }
+}
+
+@media screen and (max-width: 380px) {
+  .letter-card { padding: 1.25rem 1rem; }
+  .letter-title { font-size: 1.55rem; }
+}
