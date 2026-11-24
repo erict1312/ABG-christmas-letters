@@ -150,15 +150,6 @@ body.letter-page {
   }
 }
 
-/* Small festive illustration above each unlocked letter */
-.letter-illustration {
-  display: block;
-  width: clamp(125px, 30%, 165px);
-  height: auto;
-  margin: 0 auto 1.25rem;
-  object-fit: contain;
-}
-
 @media screen and (max-width: 736px) {
   .letter-illustration {
     width: clamp(120px, 38%, 150px);
@@ -193,13 +184,12 @@ body.letter-page {
   margin: 0;
 }
 
-/* Christmas envelope illustration - final sizing */
 .letter-illustration {
   display: block;
-  width: 140px;
-  max-width: 45%;
+  width: 160px;
+  max-width: 55%;
   height: auto;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1.75rem;
   object-fit: contain;
 }
 
