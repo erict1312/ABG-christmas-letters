@@ -206,6 +206,28 @@ body.letter-page {
 }
 
 #letter-content .letter-footer {
-  margin-top: 2.5rem;
-  padding-bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.25rem;
+  padding: 0 0 1rem;
+}
+
+.letter-footer-illustration {
+  display: block;
+  width: clamp(150px, 48%, 190px);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 736px) {
+  #letter-content .letter-footer {
+    margin-top: 2rem;
+    padding-bottom: .75rem;
+  }
+
+  .letter-footer-illustration {
+    width: clamp(145px, 52%, 180px);
+  }
 }
