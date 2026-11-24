@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+  <title>Christmas Letter</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/letters.css" />
+  <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+</head>
+<body class="letter-page">
+  <main class="letter-shell">
+    <section class="letter-card">
+      <div id="password-gate">
+        <p class="letter-kicker">A Christmas surprise</p>
+        <h1 class="letter-title">A Little Something for <span id="recipient-name">You</span></h1>
+        <p class="letter-intro">Someone has prepared a little Christmas surprise just for you. Enter your secret password to open it.</p>
+        <form id="password-form" class="letter-form">
+          <label for="letter-password">Your password</label>
+          <input id="letter-password" type="password" autocomplete="off" placeholder="Enter your password" required />
+          <button type="submit" class="button primary">Unlock your letter</button>
+          <p id="password-error" class="letter-error" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+      <article id="letter-content" hidden>
+        <img
+          class="letter-illustration"
+          src="../../images/shared/christmas-envelope.png"
+          alt="A Christmas envelope with a red wax seal and festive greenery"
+          width="289"
+          height="101"
+        />
+        <p class="letter-kicker">A letter, just for you</p>
+        <h1 class="letter-title" id="letter-title">Merry Christmas!</h1>
+        <p id="letter-greeting"></p>
+        <div id="letter-paragraphs"></div>
+        <div class="letter-footer" aria-label="Christmas decoration">
+          <img
+            class="letter-footer-illustration"
+            src="../../images/shared/christmas-greenery-bow.png"
+            alt="Christmas greenery with red berries and a red ribbon"
+            width="344"
+            height="79"
+          />
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="./letter-config.js"></script>
+  <script src="../../assets/js/letter-gate.js"></script>
+</body>
+</html>

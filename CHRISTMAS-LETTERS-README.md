@@ -22,3 +22,9 @@ The password gate is a simple client-side gate, not secure authentication.
 - Added a small local envelope illustration above the heading on each unlocked letter page.
 - Asset: `images/shared/christmas-envelope.png`.
 - Shared by all 10 recipients; no external image hosting is required.
+
+
+## Personalized folders
+- `letters/tazkia/` — Person 01, Ce Tazkia
+- `letters/megy/` — Person 02, Kak Megy
+- Remaining recipients stay in `letters/person-03/` through `letters/person-10/` until named.
