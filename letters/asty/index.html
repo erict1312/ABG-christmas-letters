@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Christmas Letter</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/letters.css?v=20261124-holly-open-letter" />
+  <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+</head>
+<body class="letter-page">
+  <main class="letter-shell">
+    <section class="letter-card">
+      <div id="password-gate">
+        <p class="letter-kicker">A Christmas surprise</p>
+        <img
+          class="gate-illustration"
+          src="../../images/shared/christmas-envelope-personalized.png"
+          alt="A Christmas envelope with a red wax seal, evergreen branches, berries, and a pinecone"
+          width="445"
+          height="185"
+        />
+        <h1 class="letter-title gate-title">A Special Christmas Note,<br />Just for You — <strong id="recipient-name">You</strong></h1>
+        <p class="letter-intro gate-intro">A small Christmas gift, wrapped in words of appreciation. I hope this little letter brings a smile to your day.</p>
+        <div class="gate-divider" aria-hidden="true">
+          <img src="../../images/shared/christmas-holly-divider.png" alt="" width="82" height="69" />
+        </div>
+        <form id="password-form" class="letter-form">
+          <label for="letter-password">Your password</label>
+          <input id="letter-password" type="password" autocomplete="off" placeholder="Enter your password" required />
+          <button type="submit" class="button primary">Open Your Letter</button>
+          <p id="password-error" class="letter-error" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+      <article id="letter-content" hidden>
+        <img
+          class="letter-illustration"
+          src="../../images/shared/christmas-envelope.png"
+          alt="A Christmas envelope with a red wax seal and festive greenery"
+          width="289"
+          height="101"
+        />
+        <p class="letter-kicker">A letter, just for you</p>
+        <h1 class="letter-title" id="letter-title">Merry Christmas!</h1>
+        <p id="letter-greeting"></p>
+        <div id="letter-paragraphs"></div>
+        <div class="letter-footer" aria-label="Christmas decoration">
+          <img
+            class="letter-footer-illustration"
+            src="../../images/shared/christmas-greenery-bow.png"
+            alt="Christmas greenery with red berries and a red ribbon"
+            width="344"
+            height="79"
+          />
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="./letter-config.js"></script>
+  <script src="../../assets/js/letter-gate.js"></script>
+</body>
+</html>
