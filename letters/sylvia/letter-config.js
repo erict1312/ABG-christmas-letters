@@ -2,7 +2,7 @@
 window.LETTER_CONFIG = {
   pageTitle: "Christmas Letter | Sylvia",
   recipientName: "Sylvia",
-  password: "CHANGE_ME_10", // Replace with Sylvia's unique password (case-sensitive)
+  password: '16787', // Replace with Sylvia's unique password (case-sensitive)
   letterTitle: "Merry Christmas, Sylvi!",
   greeting: "Dear Sylvi,",
   paragraphs: [
